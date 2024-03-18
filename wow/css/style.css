@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR');
 
 *{
     margin: 0;
@@ -8,6 +9,8 @@
 body{
     background-color: #fff;
     color: #333;
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -1px;
 }
 ul,li{
     list-style: none;
@@ -198,6 +201,8 @@ hyphens 속성은 텍스트 줄바꿈 할때 하이픈으로 연결하는 방법
     font-size: 16px;
     line-height: 1.5;
     text-align: right;
+    font-weight: 400;
+    padding-right: 20px;
 }
 
 .content .tab .infocontents .gallery{
