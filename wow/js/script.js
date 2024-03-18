@@ -18,6 +18,22 @@ $(function(){//1
     $('#popup-close').click(function(){//5
         $('.popup').hide();
     });//5
+    //팝업
+    $('#pop2-o').click(function(){//4
+        $('.pop2').show();
+    });//4
+
+    $('#pop2-c').click(function(){//5
+        $('.pop2').hide();
+    });//5
+
+    $('#pop2-o').click(function(){//5
+        $('.popup').hide();
+    });//5
+    $('#popup-on').click(function(){//5
+        $('.pop2').hide();
+    });//5
+
 
     // 페이드인아웃
     // var currentIndex = 0;

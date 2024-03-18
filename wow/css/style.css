@@ -1,4 +1,10 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
     margin: 0;
@@ -8,6 +14,7 @@
 body{
     background-color: #fff;
     color: #333;
+    font-family: 'DOSGothic';  
 }
 ul,li{
     list-style: none;
@@ -168,6 +175,7 @@ main{
     display: flex;
     justify-content: space-between;
     position: relative;
+    font-weight: bold;
 }
 
 .content .tab .infocontents .notice ul li a{
@@ -190,7 +198,7 @@ hyphens 속성은 텍스트 줄바꿈 할때 하이픈으로 연결하는 방법
  */
 
 .content .tab .infocontents .notice ul li a:hover{
-    text-decoration: underline brown;
+    text-decoration: 2px underline brown;
 }
 .content .tab .infocontents .notice ul li span{
     width: 30%;
@@ -367,4 +375,37 @@ footer .ffamily .fcopy address{
     padding: 1px 2px;
     border-radius: 2px;
     margin: 0 0 0 220px;
+}
+
+.pop2{
+    width: 500px;
+    height: 500px;
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: rgb(212, 35, 35);
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    border-radius: 10px;
+}
+.pop2 h2{
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px dashed brown;
+}
+.pop2 img{
+    width: 400px;
+    margin: 20px 0;
+}
+.pop2 p{
+    margin-bottom: 20px;
+}
+#pop2-c{
+    background-color: transparent;
+    box-shadow: 0 0 3px brown;
+    padding: 1px 2px;
+    border-radius: 2px;
 }
