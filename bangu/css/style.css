@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none;color: inherit;}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+img:hover{
+    scale: 1.3;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    font-family: "Grandiflora One";
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:7px;
+    justify-content: center;
+    background-color: #308159;
+    transition: all ease 0.5s;
+}
+header p{
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.itme{
+    width: 80vw;
+    height: 100vh;
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    transition: all ease 0.5s;
+}
+
+li{
+    overflow: hidden;
+}
+
+li:first-child{
+    grid-column: 1/3;
+    grid-row: 1/3
+}
+
+li:nth-child(4){
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+li:nth-child(7){
+    grid-column: 1/3;
+    grid-row: 4/6;
+}
+
+
+@media(max-width:1024px){
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        width: 100vw;
+        height: 10vh;
+    }
+    header p{
+        display: none;
+    }
+
+    ul{
+        width: 100vw;
+        height: 90vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(12,1fr);
+    }
+    li:first-child{
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+
+    li:nth-child(4){
+        grid-column:1/3;
+        grid-row: 4/7;
+    }
+
+    li:nth-child(7){
+        grid-column: 1/3;
+        grid-row: 7/10;
+    }
+    li:nth-child(8){
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+
+    li:nth-child(10){
+        grid-column: 1/3 ;
+        grid-row: 10/13;
+    }
+    li:nth-child(2),li:nth-child(3),
+    li:nth-child(5),li:nth-child(6),
+    li:nth-child(8),li:nth-child(9),
+    li:nth-child(11){
+        display: none;
+    }
+}
