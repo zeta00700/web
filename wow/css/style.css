@@ -1,5 +1,10 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR');
+@font-face {
+    font-family: 'TTHakgyoansimUndongjangL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimUndongjangL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
 
 *{
     margin: 0;
@@ -9,7 +14,7 @@
 body{
     background-color: #fff;
     color: #333;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'TTHakgyoansimUndongjangL';
     letter-spacing: -1px;
 }
 ul,li{
