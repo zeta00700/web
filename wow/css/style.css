@@ -1,10 +1,5 @@
 @charset "utf-8";
-@font-face {
-    font-family: 'TTHakgyoansimUndongjangL';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimUndongjangL.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Single+Day');
 
 *{
     margin: 0;
@@ -14,7 +9,7 @@
 body{
     background-color: #fff;
     color: #333;
-    font-family: 'TTHakgyoansimUndongjangL';
+    font-family: 'SingleDay';
     letter-spacing: -1px;
 }
 ul,li{
