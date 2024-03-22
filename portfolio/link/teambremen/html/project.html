@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>TEAM BREMEN</title>
+
+    <link rel="stylesheet" href="../css/swiper.css" />
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/project_content.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <!--navi-->
+        <div class="navi">
+
+            <div class="sub_btn">
+                <figure class="twt">
+                    <a href="https://twitter.com/?lang=ko" target="_blank" class="twt_a"><img
+                            src="../img/icon/twitter_b.png" alt=""></a>
+                </figure>
+                <button class="language">
+                    <img src="../img/icon/language.png" alt="">
+                    <!-- <ul class="language_menu">
+                        <li class="language_btn">한국어</li>
+                        <li class="language_btn">English</li>
+                    </ul> -->
+                </button>
+            </div>
+
+            <figure class="logo">
+                <a href="../index.html" class="logo_a"><img src="../img/nav/logo.png" alt=""></a>
+            </figure>
+
+            <nav class="menu">
+                <ul class="main_menu">
+                    <li class="main_menu_btn"><a href="company.html" class="main_menu_a">TEAM BREMEN</a></li>
+                    <li class="main_menu_btn"><a href="project.html" class="main_menu_a">PROJECT</a></li>
+                    <li class="main_menu_btn"><a href="news.html" class="main_menu_a">NEWS</a></li>
+                    <li class="main_menu_btn"><a href="contact.html" class="main_menu_a">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!--content-->
+
+        <div class="content">
+            <!-- Swiper -->
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal_content" src="../img/project/game1.png" id="img01">
+            </div>
+            <div class="swiper mySwiper">
+                <!-- <button class="swiper_txt_btn">PUSH</button> -->
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="swiper_box">
+                            <!-- <h2 class="swiper_name">Q·U·E·S·T</h2> -->
+                            <figure class="swiper_img">
+                                <img class="game_img" src="../img/project/game1.png" alt="">
+
+                            </figure>
+                            <p class="swiper_img_txt1">제목 어쩌구저쩌구</p>
+                            <p class="swiper_img_txt2">턴제/RPG/12세이용가</p>
+                            <p class="swiper_img_txt3">어쩌구한 모험 이야기<br>가나다라마바사<br>아자차카타파하</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper_box black">
+                            <!-- <h2 class="swiper_name">Q·U·E·S·T</h2>
+                            <figure class="swiper_img">
+                                <img src="" alt="">
+                            </figure> -->
+                            <span class="coming">cooming soon...</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper_box">
+                            <!-- <h2 class="swiper_name">Q·U·E·S·T</h2>
+                            <figure class="swiper_img">
+                                <img src="" alt="">
+                            </figure> -->
+                            <span class="coming">cooming soon...</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "cards",
+                    grabCursor: true,
+                });
+            </script>
+
+        </div>
+
+
+        <!--footer-->
+        <footer class="footer">All Right Reserved TEAM BREMEN.</footer>
+    </div>
+
+    <script src="../java/modal.js"></script>
+</body>
+
+</html>

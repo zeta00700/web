@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    font-family: 'Orbit-Regular';
+    color: #121212;
+    opacity: 0.5;
+    font-size: 11px;
+    padding-bottom: 10px;
+    
+    bottom: 0;
+}

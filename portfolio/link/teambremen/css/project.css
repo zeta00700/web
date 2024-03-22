@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'neodunggeumo';
+    src:url(../font/NeoDunggeunmoPro-Regular.woff) format('woff'),
+}
+@font-face {
+    font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*content*/
+.content{
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper_box{
+    width: 100%;
+    height: 100%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+.swiper_name{
+    font-family: 'neodunggeumo';
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+    letter-spacing: 10px;
+}
+
+.swiper_img{
+    /* width: 400px; */
+    /* height: 500px; */
+    width: 450px;
+    height: 610px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  .modal {
+    /*모달창 숨겨 놓기*/
+    display: none; 
+    position: fixed; 
+    z-index: 100; /* 모달창을 제일 앞에 두기 */
+    padding-top: 100px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto; /* 스크롤 허용 auto */
+    cursor: pointer; /* 마우스 손가락모양 */
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* 모달창 이미지 */
+  .modal_content {
+    margin: auto;
+    display: block;
+    width: 50%; height: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    animation-name: zoom;
+    /* animation-duration: 0.8s; */
+  }
+  /* 모달창 애니메이션 추가 */
+  @keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  /* 닫기 버튼 꾸미기 */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* .swiper_txt_btn{
+    font-family: 'neodunggeumo';
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #525252;
+    box-shadow: 0px 3px 4px #121212;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: -200px;
+    bottom: 50px;
+    border: 0;
+    transition-duration: 0.1s;
+}
+.swiper_txt_btn:active{
+    background-color: #121212;
+    bottom: 47px;
+    box-shadow: 0 1px 1px #525252;
+} */
+
+
+.swiper_img_txt1,.swiper_img_txt2,.swiper_img_txt3{
+    font-family: 'Orbit-Regular';
+    letter-spacing: -1px;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.swiper_img_txt1{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 50px;
+    background-color: #474747;
+    font-size: 25px;
+    left: -19px;
+    top: 130px;
+    rotate: 3deg;
+    transition: all 0.3s ease;
+}
+/* .swiper_img:hover + .swiper_img_txt1{
+    left: -250px;
+    top: 118px;
+} */
+.swiper_img_txt1:active{
+    left: -250px;
+    top: 118px;
+}
+
+.swiper_img_txt2{
+    width: 320px;
+    height: 50px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding-left: 50px;
+    background-color: #5e5e5e;
+    font-size: 20px;
+    left: -20px;
+    top: 230px;
+    rotate: -3deg;
+    transition: all 0.5s ease;
+}
+
+.swiper_img:active + .swiper_img_txt2{
+    left: -270px;
+    top: 242px;
+}
+.swiper_img_txt2:active{
+    left: -270px;
+    top: 242px;
+}
+
+.swiper_img_txt3{
+    width: 320px;
+    /* height: 50px; */
+    border-radius: 5px;
+    padding: 10px 0 10px 50px;
+    background-color: #727272;
+    font-size: 15px;
+    left: -15px;
+    top: 300px;
+    rotate: -5deg;
+    transition: all 0.4s ease;
+}
+.swiper_img:active + .swiper_img_txt3{
+    left: -230px;
+    top: 319px;
+}
+.swiper_img_txt3:active{
+    left: -230px;
+    top: 319px;
+}
+
+
+.game_img{
+    object-fit: cover;
+}
+
+
+
+.coming{
+    font-family: 'neodunggeumo';
+    font-size: 2rem;
+}
