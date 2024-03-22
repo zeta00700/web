@@ -1,0 +1,97 @@
+/*꼬리말*/
+
+.line{
+    width: 1300px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+footer{
+    width: 1300px;
+    display: flex;
+    padding: 1rem;
+}
+
+.sns{
+    color: white;
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.facebook{
+    width: 30px;
+    height: 30px;
+    font-size: 1.3rem;
+    background-color: black;
+    border-radius: 100px;
+    padding: 4px 0 0 4px;
+}
+.insta{
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    background-color: black;
+    border-radius: 100px;
+    padding: 6px 0 0 6px;
+}
+.naver{
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    background-color: black;
+    border-radius: 100px;
+    padding: 7px 0 0 8px;
+}
+
+.sns_btn{
+    color: white;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.service_1{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.service_1_2{
+    color: #da264b;
+}
+
+.service_2 ,.service_4{
+    font-size: 0.8rem;
+    color: rgb(85, 85, 85);
+    line-height: 150%;
+}
+
+.service_3{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.service_btn{
+    display: flex;
+    gap: 0.5rem;
+}
+.service_btn_1, .service_btn_2{
+    border: 1px solid gray;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.service_btn_1_1{
+    text-decoration: none;
+    color: gray;
+    width: 100%;
+    height: 100%;
+    padding: 5px 8px;
+    display: block;
+}
