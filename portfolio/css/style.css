@@ -9,11 +9,13 @@
 body{
     font-family: 'DOSGothic';
     width: 100vw;height: 100vh;
-    overflow: hidden;
     color: #333;
     background-color: #666;
+    scale: 1.1;
 }
+
 main{
+    transition: all ease 0.4s;
     width: 600px;
     height: 400px;
     box-shadow: 0 0 5px 1px #333;
@@ -25,6 +27,7 @@ main{
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 10;
+    
 }
 h1{
     position: absolute; top: 0; left: 0;
@@ -55,8 +58,6 @@ ul{
     width: 600px;
     height: 370px;
     overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
     display: block;
     padding: 10px 0;
     background-color: #555;
@@ -123,13 +124,10 @@ li button:hover{
     transition: all ease 0.5s;
 }
 .open:hover{
-    scale: 0.8;
+    scale: 1.2;
 }
 ::selection{
     background-color: #333;
     color: #fff;
 }
 
-.sample{
-    /* display: none; */
-}
