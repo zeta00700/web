@@ -1,0 +1,33 @@
+@media screen and (max-width:1020px){
+
+    main{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h1 span{
+        font-size: 30px;
+    }
+    h1 .close{
+        font-size: 23px;
+        padding: 3px 10px;
+        top: 9px;
+    }
+    h1 .close:hover{
+        background-color: #555;
+    }
+    ul{
+        width: 100vw;height: 100vh;
+        padding: 25px 0;
+    }
+    li{
+        width: 94vw; height: 100px;
+    }
+    li .box{
+        margin: 20px 0;
+    }
+
+}
