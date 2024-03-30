@@ -5,6 +5,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'DOSPilgiMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     font-family: 'DOSGothic';
@@ -75,6 +81,17 @@ li{
 }
 li h2.name{
     font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+li h2 span{
+    font-family: 'DOSPilgiMedium';
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 1px 2px;
+    border-radius: 1px;
+    box-shadow: 0 0 2px #555;
+    color: #444; 
 }
 li .box{
     width: 100%;
