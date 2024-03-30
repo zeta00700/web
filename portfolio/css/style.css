@@ -59,6 +59,7 @@ h1 .close{
 h1 .close:hover{
     background-color: #555;
 }
+
 ul{
     width: 600px;
     height: 370px;
@@ -67,6 +68,7 @@ ul{
     padding: 10px 0;
     background-color: #555;
 }
+
 li{
     width: 560px;
     height: 80px;
@@ -101,6 +103,7 @@ li .box{
     margin: 5px 0;
     padding: 0 5px;
 }
+
 .tag{
     padding: 2px 3px;
     color: #fff;
@@ -132,6 +135,7 @@ li button a{
 li button:hover{
     background-color:#702a2a;
 }
+
 .folder{
     position: fixed;
     top: 50%;
@@ -142,6 +146,7 @@ li button:hover{
     color: #fff;
     display: none;
 }
+
 .open{
     cursor: pointer;
     transition: all ease 0.5s;
@@ -149,8 +154,8 @@ li button:hover{
 .open:hover{
     scale: 1.2;
 }
+
 ::selection{
     background-color: #333;
     color: #fff;
 }
-
