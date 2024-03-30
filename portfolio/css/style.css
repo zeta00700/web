@@ -1,0 +1,131 @@
+@import url(default.css);
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'DOSGothic';
+    width: 100vw;height: 100vh;
+    overflow: hidden;
+    color: #333;
+    background-color: #666;
+}
+main{
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 0 5px 1px #333;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    padding: 42px 0 0 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+h1{
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    z-index: 5;
+}
+h1 span{
+    font-size: 20px;
+    font-weight: 100;
+}
+h1 .close{
+    font-size: 19px;
+    background-color: #7a4848;
+    padding: 3px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+h1 .close:hover{
+    background-color: #555;
+}
+ul{
+    width: 600px;
+    height: 370px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    padding: 10px 0;
+    background-color: #555;
+}
+li{
+    width: 560px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px #333;
+    margin: 0 20px 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+li h2.name{
+    font-size: 30px;
+}
+li .box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    padding: 0 5px;
+}
+.tag{
+    padding: 2px 3px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.day{color: #333; font-weight: bold; box-shadow: 0 0 2px #333; padding: 1px 3px;}
+.self{background-color: #7a4848;}
+.renewal{background-color: #586681;}
+.media{background-color: #5a7979;}
+.page{background-color: #5d664e;}
+
+li button{
+    width: 50px; height: 100%;
+    position: absolute; top: 0; right: 0px;
+    font-size: 25px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+li button:hover{
+    background-color:#702a2a;
+}
+.folder{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    font-size: 70px;
+    color: #fff;
+    display: none;
+}
+.open{
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.open:hover{
+    scale: 0.8;
+}
+::selection{
+    background-color: #333;
+    color: #fff;
+}
