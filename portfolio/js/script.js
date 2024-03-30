@@ -1,0 +1,10 @@
+$(function(){
+    $('.close').click(function(){
+        $('main').hide();
+        $('.folder').show();
+    });
+    $('.open').click(function(){
+        $('main').show();
+        $('.folder').hide();
+    });
+});
