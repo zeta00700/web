@@ -42,10 +42,6 @@ h1{
     color: #fff;
     z-index: 5;
 }
-h1 span{
-    font-size: 20px;
-    font-weight: 100;
-}
 h1 .close{
     font-size: 19px;
     background-color: #7a4848;
@@ -59,7 +55,6 @@ h1 .close{
 h1 .close:hover{
     background-color: #555;
 }
-
 ul{
     width: 600px;
     height: 370px;
@@ -68,7 +63,6 @@ ul{
     padding: 10px 0;
     background-color: #555;
 }
-
 li{
     width: 560px;
     height: 80px;
@@ -95,6 +89,22 @@ li h2 span{
     box-shadow: 0 0 2px #555;
     color: #444; 
 }
+
+.figma{
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    font-size: 16px;
+    padding: 1px 2px 1px 3px;
+    border-radius: 3px;
+    color: #999;
+    border: #999 solid 1px;
+}
+.figma:hover{
+    color: #fff;
+    background-color: #999;
+}
+
 li .box{
     width: 100%;
     display: flex;
@@ -103,9 +113,8 @@ li .box{
     margin: 5px 0;
     padding: 0 5px;
 }
-
 .tag{
-    padding: 2px 3px;
+    padding: 2px 3px 2px 4px;
     color: #fff;
     font-size: 14px;
     border-radius: 3px;
@@ -115,8 +124,9 @@ li .box{
 .renewal{background-color: #586681;}
 .media{background-color: #5a7979;}
 .page{background-color: #5d664e;}
+.commission{background-color: rgb(168, 141, 18);}
 
-li button{
+li .link{
     width: 50px; height: 100%;
     position: absolute; top: 0; right: 0px;
     font-size: 25px;
@@ -125,17 +135,16 @@ li button{
     color: #fff;
     cursor: pointer;
 }
-li button a{
+li .link a{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-li button:hover{
+li .link:hover{
     background-color:#702a2a;
 }
-
 .folder{
     position: fixed;
     top: 50%;
@@ -146,7 +155,6 @@ li button:hover{
     color: #fff;
     display: none;
 }
-
 .open{
     cursor: pointer;
     transition: all ease 0.5s;
@@ -155,7 +163,74 @@ li button:hover{
     scale: 1.2;
 }
 
+.p{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.profile {
+    display: inline-flex;
+    margin: 20px;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    position: relative;
+}
+.profile p{font-size: 16px}
+.profile span{font-size: 13px;}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inner h3{
+    font-weight: bold;
+}
+
+.inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+        45deg,
+        #333 25%,
+        transparent 25%,
+        transparent 75%,
+        #333 75%,
+        #333
+      ),
+      linear-gradient(
+        -45deg,
+        #333 25%,
+        transparent 25%,
+        transparent 75%,
+        #333 75%,
+        #333
+      );
+    background-size: 20px 20px;
+    background-repeat: round round;
+    background-position: -10px -10px;
+  }
+  .inner:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #fff;
+    border: #333 solid 5px;
+    z-index: -1;
+  }
+  
+
 ::selection{
     background-color: #333;
     color: #fff;
 }
+.sample{display: none;}
