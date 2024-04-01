@@ -130,9 +130,27 @@ nav ul li a:hover{
     height: 120px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 50px;
 }
+.date{color: transparent;}/*날짜/날씨*/
+.population{
+    font-weight: bold;
+    font-size: 17px;
+    text-align: right;
+    scale: 0.9;
+}
+.population >p > span{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.population .num{
+    font-size: 28px;
+    font-weight: bold;
+    color: #0075C1;
+}
+
 .logo{
     color: #0075C1;
     text-align: center;
