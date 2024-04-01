@@ -186,7 +186,7 @@ li .link:hover{
 }
 .inner{scale: 1.1; color:#fff;opacity: 1;}
 .profile h3{font-weight: bold;}
-.profile p{font-size: 16px}
+.profile p{font-size: 16px;}
 .profile span{font-size: 13px;}
 .profile {
     display: inline-flex;
