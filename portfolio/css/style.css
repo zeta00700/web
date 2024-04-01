@@ -169,64 +169,39 @@ li .link:hover{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.profile{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scale: 0.9;
+    opacity: .8;
+}
+.inner{scale: 1.1; color:#fff;opacity: 1;}
+.profile h3{font-weight: bold;}
+.profile p{font-size: 16px}
+.profile span{font-size: 13px;}
 .profile {
     display: inline-flex;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><polygon points='40 0,0 40,40 80,80 40' style='fill:black;fill-rule:nonzero;'></polygon></svg>");
     margin: 20px;
     width: 250px;
     height: 100px;
     padding: 20px;
-    position: relative;
-}
-.profile p{font-size: 16px}
-.profile span{font-size: 13px;}
-.inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.inner h3{
-    font-weight: bold;
-}
-
-.inner {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    background-image: linear-gradient(
-        45deg,
-        #333 25%,
-        transparent 25%,
-        transparent 75%,
-        #333 75%,
-        #333
-      ),
-      linear-gradient(
-        -45deg,
-        #333 25%,
-        transparent 25%,
-        transparent 75%,
-        #333 75%,
-        #333
-      );
     background-size: 20px 20px;
     background-repeat: round round;
-    background-position: -10px -10px;
-  }
-  .inner:after {
+    position: relative;
+}
+.profile::after{
     content: "";
     position: absolute;
     left: 10px;
     top: 10px;
     right: 10px;
     bottom: 10px;
-    background: #fff;
-    border: #333 solid 5px;
+    background: black;
     z-index: -1;
-  }
+}
   
 
 ::selection{
