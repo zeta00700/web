@@ -202,7 +202,6 @@ li .link:hover{
     background: black;
     z-index: -1;
 }
-  
 
 ::selection{
     background-color: #333;
