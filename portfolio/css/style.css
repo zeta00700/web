@@ -55,6 +55,13 @@ h1 .close{
 h1 .close:hover{
     background-color: #555;
 }
+
+h1 .help_o{
+    font-size: 13px;
+    position: absolute; top: 15px; left: 150px;
+    opacity: .8;
+}
+
 ul{
     width: 600px;
     height: 370px;
@@ -202,6 +209,30 @@ li .link:hover{
     background: black;
     z-index: -1;
 }
+
+.help_o{
+    border: none;
+}
+.help{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.help img{
+    border-radius: 7px;
+}
+.help .help_c{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 2px 5px 0 6px;
+    font-size: 15px;
+    color: #fff;
+    border: #ffffff75 solid 1px;
+}
+  
 
 ::selection{
     background-color: #333;
