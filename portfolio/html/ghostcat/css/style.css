@@ -1,0 +1,228 @@
+@import url(default.css);
+@import url(nav.css);
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg');
+
+body{
+    background-color: #ebebeb;
+}
+
+/*슬라이드 배너*/
+.slide_ban ul, .slide_ban li {list-style: none;}
+.slide_ban {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    /* border-top: #333 solid 2px; */
+    /* border-bottom: #333 solid 2px; */
+    background-color: #333;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+.slide_ban .slide_ban_list {display: flex;}
+.slide_ban .slide_ban_list > li {
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: "Oldenburg", serif;
+}
+@keyframes flowRolling {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+
+.slide_ban a{
+    width: 250px;height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide_ban img{
+    height: 250px;
+}
+.slide_ban a:hover > img{
+    opacity: 0.3;
+}
+.slide_ban a:hover > p{
+    opacity: 1;
+}
+.slide_ban a:hover > .hot{
+    opacity: 1;
+}
+.slide_ban p{
+    opacity: 0;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.hot{
+    opacity: 0;
+    position: absolute;
+    top: 70px;
+    padding: 2px;
+    border: 1px solid crimson;
+    color:crimson;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 10px;
+}
+
+
+/* 전광판 */
+.text_slide{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.text_rolling{
+    width: 100%;
+    height: 30px;
+    font-size: .775rem;
+    letter-spacing: -.075em;
+    font-family: "Oldenburg", serif;
+    background-color: #fff;
+    border-bottom: 2px solid #333;
+}
+.text_rolling > .text_slide_wrap{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    white-space: nowrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* 애니메이션하는 요소 */
+.text_slide_roller{
+    position: absolute;
+    height: 100%;
+}
+.text_slide_roller > ul{
+    margin: 0;
+    list-style: none;
+    padding: 7px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.text_slide_roller > ul > li{
+    padding-right: 30px;
+}
+
+/* 애니메이션 */
+.text_slide_roller.original{
+    animation: 35s linear 0s infinite normal forwards running rollingleft1;
+}
+.text_slide_roller.clone{
+    animation: 35s linear 0s infinite normal none running rollingleft2;
+}
+@keyframes rollingleft1 { /* 원본용 */
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    50.01%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollingleft2 { /* 클론용 */
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+/*탭메뉴*/
+.tab{
+    width: 800px;
+    height: 480px;
+    margin: 40px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Oldenburg", serif;
+}
+
+.tabmenu{
+    display: flex;
+    padding: 5px 0;
+    font-size: 14px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.tabcon{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    white-space: normal;
+    padding-left: 17px;
+}
+.on{
+    font-weight: bold;
+    text-shadow: 0 0 3px #fff;
+}
+.tabcon p{
+    font-size: 12px;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tabcon ul{
+    width: 100%;
+    white-space: pre-wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.tabcon li{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 5px;    
+}
+.tabcon li:hover{
+    box-shadow: 0 0 3px #999;
+}
+.tabcon img{height: 180px;transition: all ease 0.5s;}
+.tabcon img:hover{scale: 1.2;}
+
+
+.keyring{
+    display: none;
+}
+.case{
+    display: none;
+}
+.griptalk{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    color: #999;
+    font-family: "Oldenburg", serif;
+    letter-spacing: -1px;
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 5px;
+}

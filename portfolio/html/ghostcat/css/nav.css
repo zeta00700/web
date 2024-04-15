@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon');
+
+
+nav{width: 100vw;height: 80px;
+    display: flex; justify-content: center; align-items: center;
+    position: relative;
+    background-color: #fff;}
+
+h1{font-family: "Kavoon", serif; font-weight: 400; font-size: 28px;}
+h1 a{display: flex;align-items: center;}
+h1 img{height: 28px;}
+
+nav ul{display: flex; gap: 20px;
+       font-family: "Oldenburg", serif; font-size: 13px;
+       position: absolute;}
+nav .nav_l{left: 35px;}
+nav .nav_r{right: 35px;}
+
+nav .media_nav_l{display: none;}
