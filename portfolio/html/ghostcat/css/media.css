@@ -6,6 +6,7 @@
     nav .nav_l{display: none;}
     nav .nav_r{display: none;}
     nav .media_nav_l{display: flex;}
+    nav .nav_l{left: 18px;}
 
     /*슬라이드 배너*/
     .slide_ban {height: 180px;}
