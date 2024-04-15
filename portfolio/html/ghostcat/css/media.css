@@ -15,11 +15,11 @@
     .hot{top: 33px;border-radius: 1px;font-size: 8px;}
 
     /*탭메뉴*/
-    .tab{width: 500px; height:100%; margin: 20px auto;}
+    .tab{width: 400px; height:100%; margin: 20px auto;}
     .tabmenu{font-size: 12px;}
     .tabcon{top: 40px;padding-left: 40px;}
     .tabcon p{font-size: 10px; padding-right: 38px; padding-bottom: 15px;}
-    .tabcon li{width: 200px;height: 200px;}
-    .tabcon img{height: 200px;}
+    .tabcon li{width: 150px;height: 150px;}
+    .tabcon img{height: 150px;}
     footer{display: none;}
 }
